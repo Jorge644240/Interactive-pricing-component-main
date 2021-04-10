@@ -44,7 +44,7 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- Mobile-first workflow
+- Desktop-first workflow
 
 <!-- ### Continued development
 
