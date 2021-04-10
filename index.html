@@ -38,11 +38,13 @@
 
   <article class="pricing-component">
     <div class="flex">
-      <p id="pageviews"><span>100K</span> Pageviews</p>
-      <p id="price"><span>$16.00</span>/month</p>
+      <p id="pageviews"><span></span> Pageviews</p>
+      <p id="price"><span></span>/month</p>
     </div>
 
     <input type="range" min="0" max="200" value="100">
+    
+    <p id="small-price"><span>$16.00</span>/month</p>
 
     <div class="flex" id="billing">
       <p>
@@ -51,7 +53,7 @@
           <input type="checkbox">
           <span class="slider round"></span>
         </label>
-        Yearly Billing <span id="discount">25% discount</span>
+        Yearly Billing <span id="discount">25% discount</span><span id="small-discount">-25%</span>
       </p>
     </div>
 

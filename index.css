@@ -61,7 +61,7 @@ p#price
 {
     margin: 0 0 2% auto;
 }
-#price span
+#price span, #small-price span
 {
     font-size: 2rem;
     font-weight: 800;
@@ -72,7 +72,6 @@ input[type=range]
 {
     -webkit-appearance: none;
     width: 100%;
-    background-color: hsl(174, 77%, 80%);
 }
 input[type=range]:focus
 {
@@ -169,7 +168,7 @@ input:checked + .slider:before
 {
     border-radius: 50%;
 }
-#discount
+#discount, #small-discount
 {
     background-color: hsl(14, 92%, 95%);
     color: hsl(15, 100%, 70%);
@@ -200,4 +199,117 @@ input[type=button]
     border-radius: 20px;
     padding: 2% 10%;
     margin-left: auto;
+}
+#small-price, #small-discount
+{
+    display: none;
+}
+@media screen and (max-width: 500px)
+{
+    body
+    {
+        padding: 10% 2%;
+    }
+    h1
+    {
+        font-size: 1.2rem;
+        margin: 12% auto 0;
+    }
+    h4
+    {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .pricing-component
+    {
+        width: 90%;
+        margin-top: 20%;
+    }
+    #pageviews
+    {
+        margin: 8% auto;
+    }
+    #price
+    {
+        display: none;
+    }
+    #small-price
+    {
+        display: block;
+        text-align: center;
+    }
+    #billing p
+    {
+        font-size: 0.8rem;
+    }
+    input[type=range]::-webkit-slider-thumb
+    {
+        -webkit-appearance: none;
+        background-image: url("images/icon-slider.svg");
+        background-position-x: center;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        background-color: hsl(174, 86%, 45%);
+        padding: 3%;
+        cursor: pointer;
+        height: 5vh;
+        width: 5vh;
+        border-radius: 50%;
+        margin-top: -10px;
+    }
+    input[type=range]::-webkit-slider-runnable-track
+    {
+        background-color: hsl(224, 65%, 95%);
+        border-radius: 10px;
+        height: 1.5vh;
+    }
+    #discount
+    {
+        display: none;
+    }
+    #small-discount
+    {
+        display: inline;
+    }
+    .switch
+    {
+        width: 22px;
+        height: 12px;
+        vertical-align: middle;
+    }
+    .slider:before
+    {
+        width: 10px;
+        height: 10px;
+        left: 1px;
+        bottom: 1px;
+    }
+    input:checked + .slider:before 
+    {
+        -webkit-transform: translateX(10px);
+        -ms-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+    .flex.feat
+    {
+        flex-direction: column;
+    }
+    #features
+    {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .feat input
+    {
+        padding: 4% 15%;
+        margin: 0 auto 5%;
+    }
+    #features .flex svg
+    {
+        margin-left: auto;
+    }
+    #features .flex p
+    {
+        margin: 0 auto 0 7%;
+    }
 }
