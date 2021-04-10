@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://jorge644240.github.io/)
+- Solution URL: [Solution Code](https://github.com/Jorge644240/Interactive-pricing-component-main)
+- Live Site URL: [Live result](https://jorge644240.github.io/Interactive-pricing-component-main)
 
 ## My process
 
